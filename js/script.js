@@ -37,22 +37,24 @@ console.log("Value of Container Variable: ");
 function renderLastRegisteredTask() {
   //
   //
-  var textValue = localStorage.getItem("11"); // must try to use the correct KEY
-  var textValue = localStorage.getItem("17"); // must try to use the correct KEY
-  var textValue = localStorage.getItem("18"); // must try to use the correct KEY
+  var textValue11 = localStorage.getItem("11", JSON.parse(11)); // must try to use the correct KEY
+  var textValue17 = localStorage.getItem("17", JSON.parse(17)); // must try to use the correct KEY
+  var textValue18 = localStorage.getItem("18", JSON.parse(18)); // must try to use the correct KEY
 
   //var hourValue = localStorage.getItem(Key);
 
   console.log("Value of Saved tasks in localStorage");
-  console.log(textValue);
+  console.log(textValue11);
   //console.log(hourValue);
 
-  textTaskSpan.textContent = textValue;
+  //textTaskSpan.textContent = textValue;
 
   //$("#hour-17 .time-block").val(localStorage.getItem("17"));
-  $("#hour-11 .description").val(textTaskSpan);
-  $("#hour-17 .description").val(textTaskSpan);
-  $("#hour-18 .description").val(textTaskSpan);
+  $("#hour-11 .description").val(textValue11);
+  $("#hour-17 .description").val(textValue17);
+  $("#hour-18 .description").val(textValue18);
+
+  // var lastUser = localStorage.getItem("user", JSON.parse(user));
 
   // hourTaskSpan.textContent = hourValue;
 
