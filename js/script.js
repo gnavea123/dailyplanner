@@ -30,7 +30,7 @@ console.log("Value of Container Variable: ");
 // console.log(displayEl);
 // console.log(buttonListEl);
 
-//----------------------------------- Variables for each of the Text
+//----------------------------------- Sample variables for each of the Description Text value
 
 var hour08Input = document.querySelector("#hour-08");
 var hour09Input = document.querySelector("#hour-09");
@@ -46,7 +46,16 @@ $(".saveBtn").click(function (event) {
   event.preventDefault();
   var value = $(this).siblings(".description").val(); // captures the text element for the task
   var time = $(this).parent().attr("id").split("-")[1]; // captures the hour number for the row parent id
-  localStorage.setItem(time, value);
+  // ---------  validate
+  // validate the field description text prior to saving row
+  if (value != "") {
+    // save to localStorage
+    localStorage.setItem(time, value);
+    console.log("success", "Registered successfully");
+  }
+
+  //=---------------------------
+  else console.log("Error captured: ");
 });
 // need to include validation so that you cannot save row when value of description is null
 //-------------
