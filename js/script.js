@@ -64,12 +64,12 @@ $(".saveBtn").click(function (event) {
 // Defines function for Description Class to compara hour (timeDiv) from each time slot vs CurrentHour variable
 //validates time slot and compares it to current time to colour according to past (grey), present (red) future(green)
 //
+console.log("value of currentHour: ");
+console.log(currentHour);
 $(".description").each(function () {
   var timeDiv = $(this).parent().attr("id").split("-")[1];
   console.log("value of timeDiv: ");
   console.log(timeDiv);
-  console.log("value of currentHour: ");
-  console.log(currentHour);
 
   if (currentHour === timeDiv) {
     $(this).addClass("present");
