@@ -1,4 +1,12 @@
-# Third-Party APIs: Work Day Scheduler
+# Third-Party APIs: Work Day Scheduler - Challenge07
+
+# Links to Repository and working Application
+
+https://github.com/gnavea123/dailyplanner -- repository
+
+http://127.0.0.1:5500/challenge07/dailyplanner -- application
+
+# Details of Challenge 07
 
 Challenge 07 corresponds to the creation of a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
